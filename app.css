@@ -1,3 +1,4 @@
+/* layout Default */
 * {
     box-sizing: border-box;
 	margin: 0px;
@@ -8,13 +9,67 @@ ul, ol {
     list-style: none;
 }
 
-/* layout */
-.container {
-    max-width: 1024px;
-    margin: 0 auto;
+a {
+    text-decoration: none;
+    color: currentColor;
 }
 
-.row {
+/* header */
+.page-header {
     display: flex;
-    flex-wrap: wrap;
+    background-color: #f90;
+    justify-content: center;
+    padding: 5px 0px;
 }
+
+.section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 1000px;
+}    
+
+.main-menu {
+    display: flex;
+    font-size: 16px;
+    color: white;
+    gap: 20px;
+}
+
+.logo {
+    max-width: 100%;
+    display: block;
+    height: 35px;
+}
+
+.logo-sito {
+    flex-shrink: 0;
+}
+
+.button {
+    display: flex;
+    gap: 10px;
+}
+
+.login {
+    font-size: 16px;
+    display: block;
+    background-color: white;
+    color: #f90;
+    padding: 5px 20px;
+    border: 2px solid white;
+    border-radius: 999px;
+}
+
+.sing-in {
+    font-size: 16px;
+    display: block;
+    background-color: #f90;
+    color: white;
+    padding: 5px 20px;
+    border: 2px solid white;
+    border-radius: 999px;
+}
+
